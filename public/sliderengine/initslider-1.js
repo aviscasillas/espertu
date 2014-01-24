@@ -148,4 +148,6 @@ jQuery(document).ready(function(){
         },
         transition:"slice"
     });
+    
+    $('.amazingslider-watermark-0').hide();
 });
