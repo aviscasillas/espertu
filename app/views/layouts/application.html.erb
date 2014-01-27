@@ -5,35 +5,11 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-
-  <!-- Insert to your webpage before the </head> -->
-  <script src="sliderengine/jquery.js"></script>
   <script src="sliderengine/amazingslider.js"></script>
   <script src="sliderengine/initslider-1.js"></script>
-  <!-- End of head section HTML codes -->
 </head>
 <body>
-
-<div style="margin:30px auto;max-width:600px;">
-    
-    <!-- Insert to your webpage where you want to display the slider -->
-    <div id="amazingslider-1" style="display:block;position:relative;margin:16px auto 56px;">
-        <ul class="amazingslider-slides" style="display:none;">
-            <li><img src="images/children.jpg" alt="children" /></li>
-            <li><img src="images/map.jpg" alt="map" /></li>
-            <li><img src="images/notebook.jpg" alt="notebook" /></li>
-        </ul>
-        <ul class="amazingslider-thumbnails" style="display:none;">
-            <li><img src="images/children-tn.jpg" /></li>
-            <li><img src="images/map-tn.jpg" /></li>
-            <li><img src="images/notebook-tn.jpg" /></li>
-        </ul>
-    </div>
-    <!-- End of body section HTML codes -->
-    
-</div>
-
+<%= render 'layouts/slides' %>
 <%= yield %>
-
 </body>
 </html>
