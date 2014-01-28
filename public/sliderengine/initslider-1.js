@@ -1,8 +1,14 @@
 jQuery(document).ready(function(){
+  initslider();
+  jQuery(document).on('page:load', function(){
+    initslider();
+  });
+});
+
+function initslider() {
     var scripts = document.getElementsByTagName("script");
     var jsFolder = "";
-    for (var i= 0; i< scripts.length; i++)
-    {
+    for (var i= 0; i< scripts.length; i++) {
         if( scripts[i].src && scripts[i].src.match(/initslider-1\.js/i))
             jsFolder = scripts[i].src.substr(0, scripts[i].src.lastIndexOf("/") + 1);
     }
@@ -148,6 +154,5 @@ jQuery(document).ready(function(){
         },
         transition:"slice"
     });
-    
     $('.amazingslider-watermark-0').hide();
-});
+}
