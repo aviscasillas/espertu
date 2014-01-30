@@ -8,7 +8,12 @@ html
     script src="sliderengine/amazingslider.js"
     script src="sliderengine/initslider-1.js"
   body
-    == render 'layouts/locales'
-    == render 'layouts/menu'
-    == render 'layouts/slides'
-    == yield
+    header
+      nav
+        == render 'layouts/menu'
+        == render 'layouts/locales'
+    content
+      == render 'layouts/slides'
+      == yield
+    footer
+      | Copyright © #{Time.now.year} EsPerTu Associació
