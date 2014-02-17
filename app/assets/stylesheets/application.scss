@@ -1,0 +1,73 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body {
+  margin: 0px;
+  font-family: 'Whitney SSm A', 'Whitney SSm B', "ff-meta-web-pro", sans-serif;
+  font-size: 14px;
+  color: #555555;
+  header {
+    width: 100%;
+    height: 50px;
+    background: #333333;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #111111;
+    nav {
+      margin: auto;
+      width: 600px;
+      height: 50px;
+      text-align: left;
+      li {
+        float: left;
+        margin: 15px;
+        display: inline;
+        a {
+          font-size: 14px;
+          color: #9a9a9a;
+          text-decoration: none;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+      .locales {
+        float: right;
+        a {
+          display: block;
+          border: 0;
+          width: 22px;
+          height: 16px;
+        }
+        .es {
+          background-image: url(image_path('es-icon.png'))
+        }
+        .ca {
+          background-image: url(image_path('ca-icon.png'))
+        }
+      }
+    }
+  }
+  section {
+    width: 600px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    bottom: 15px;
+    position: fixed;
+  }
+}
