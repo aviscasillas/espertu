@@ -14,7 +14,8 @@
 body {
   margin: 0px;
   font-family: 'Whitney SSm A', 'Whitney SSm B', "ff-meta-web-pro", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
+  color: #555555;
   header {
     width: 100%;
     height: 50px;
@@ -31,7 +32,7 @@ body {
         margin: 15px;
         display: inline;
         a {
-          font-size: 16px;
+          font-size: 14px;
           color: #9a9a9a;
           text-decoration: none;
           &:hover {
@@ -39,9 +40,34 @@ body {
           }
         }
       }
+      .locales {
+        float: right;
+        a {
+          display: block;
+          border: 0;
+          width: 22px;
+          height: 16px;
+        }
+        .es {
+          background-image: url(image_path('es-icon.png'))
+        }
+        .ca {
+          background-image: url(image_path('ca-icon.png'))
+        }
+      }
     }
   }
-  content {
-    width: 800px;
+  section {
+    width: 600px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    bottom: 15px;
+    position: fixed;
   }
 }

@@ -1,2 +1,3 @@
-- [:es, :ca].each do |locale|
-  li ==link_to locale, params.merge(locale: locale)
+div class='locales'
+  - [:es, :ca].each do |locale|
+    li ==link_to '', params.merge(locale: locale), class: locale
