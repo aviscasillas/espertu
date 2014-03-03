@@ -8,12 +8,15 @@ html
     script src="sliderengine/amazingslider.js"
     script src="sliderengine/initslider-1.js"
   body
+    == render 'layouts/locales'
     header
+      img id='logo' src==image_path('logo.png')
       nav
         == render 'layouts/menu'
-        == render 'layouts/locales'
-    section
       == render 'layouts/slides'
+    section
+      div id='fake-slider'
+        - 
       == yield
     footer
       | Copyright © #{Time.now.year} Associació Es Per Tu • C/ Duquessa D'Orleans, 11 2 piso • Telf. 627 579 633
