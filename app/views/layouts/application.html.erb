@@ -8,7 +8,10 @@
     <meta name="author" content="">
 
     <title>Grayscale - Free One Page Theme for Bootstrap 3</title>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+
+    <%= javascript_include_tag :application %>
+    <%= csrf_meta_tag %>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -24,11 +27,12 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-  <%= render 'layouts/nav' %>    
-  <%= render 'layouts/intro' %>    
-  <%= render 'layouts/about' %>    
-  <%= render 'layouts/project' %>    
-  <%= render 'layouts/contact' %>    
+  <div id="flash"></div>
+  <%= render 'layouts/nav' %>
+  <%= render 'layouts/intro' %>
+  <%= render 'layouts/about' %>
+  <%= render 'layouts/project' %>
+  <%= render 'layouts/contact' %>
 
   <div id="map"></div>
 
