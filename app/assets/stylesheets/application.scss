@@ -12,6 +12,10 @@
  *= require_tree .
  */
 body {
+  #flash {
+    position: fixed;
+    top: 50px;
+  }
   .locales {
     display: block;
     li {
