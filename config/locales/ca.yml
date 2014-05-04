@@ -1,4 +1,10 @@
 ca:
+  mail_form:
+    attributes:
+      contact:
+        name: Nom
+        email: Email
+        message: Missatge
   nav:
     about: Qui som?
     project: Projecte
@@ -21,4 +27,4 @@ ca:
     p8: Les malalties derivades de l'exposicio continuada i constant a la radiactivitat, incideixen especialment en els nens i son principalment cancers de tiroides, leucemies, transtorns metabolics,endocrins, respiratoris i una llarga llista de malalties derivades de la radiactivitat.
   contact:
     title: Contacta amb EsPerTu
-    p1: No dubtis a contactar amb nosaltres per qualsevol tipus de consulta, feedback, sugerencia o senzillament dir hola!
+    send_message: Enviar missatge

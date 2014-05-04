@@ -582,7 +582,7 @@ ol ol {
   padding-left: 0;
   list-style: none;
 }
-.list-inline > li {
+.list-inline > li 
   display: inline-block;
   padding-right: 5px;
   padding-left: 5px;
