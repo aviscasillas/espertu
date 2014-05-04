@@ -284,17 +284,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #28c3ab;
-    color: #28c3ab;
+    border: 1px solid #4f9658;
+    color: #4f9658;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #28c3ab;
+    border: 1px solid #4f9658;
     outline: 0;
     color: #000;
-    background-color: #28c3ab;
+    background-color: #4f9658;
 }
 
 .btn-huge {
