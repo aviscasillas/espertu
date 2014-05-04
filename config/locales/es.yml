@@ -1,4 +1,10 @@
 es:
+  mail_form:
+    attributes:
+      contact:
+        name: Nombre
+        email: Email
+        message: Mensaje
   nav:
     about: ¿Quienes somos?
     project: Proyecto
@@ -21,4 +27,4 @@ es:
     p8: Las enfermedades derivadas de la exposición continuada y constante a la radioactividad, inciden especialmente en los niños y son principalmente cánceres de tiroides, leucemias, trastornos metabólicos, endocrinos, respiratorios y una larga lista de enfermedades derivadas de la radioactividad.
   contact:
     title: Contacta con EsPerTu
-    p1: No dudes en contactar con nostros para cualquier tipo de consulta, feedback, sugerencias o simplemente decir hola!
+    send_message: Enviar mensaje
