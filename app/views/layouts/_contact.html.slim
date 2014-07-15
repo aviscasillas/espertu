@@ -1,0 +1,26 @@
+section id="contact" class="container content-section text-center"
+  div class="row"
+    div class="col-lg-8 col-lg-offset-2"
+      h2 = t('contact.title')
+      = form_for @contact, remote: true, authenticity_token: true, html: {class: 'form-inline'} do |f|
+          = f.text_field :name, required: true, placeholder: t('mail_form.attributes.contact.name'), class: 'input-small'
+          = f.email_field :email, required: true, placeholder: t('mail_form.attributes.contact.email'), class: 'input-small'
+          div class="controls" = f.label :message
+            div class="controls" = f.text_area :message, required: true, rows: '5'
+          = f.submit t('contact.send_message'), class: 'btn'
+
+      br
+
+      ul class="list-inline banner-social-buttons"
+        li
+          a href="https://www.facebook.com/groups/179372658783671/?fref=ts" class="btn btn-default btn-lg"
+            i class="fa fa-facebook fa-fw"
+            span class="network-name" Facebook
+        li
+          a href="http://associacioespertu.blogspot.com.es/" class="btn btn-default btn-lg"
+            i class="fa fa-external-link fa-fw"
+            span class="network-name" Blogspot
+        li
+          a href="http://www.github.com/aviscasillas/espertu" class="btn btn-default btn-lg"
+            i class="fa fa-github fa-fw"
+            span class="network-name" Github
