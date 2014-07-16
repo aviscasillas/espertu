@@ -261,16 +261,16 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
-    .download-section {
+    .about-section {
         padding: 100px 0;
     }
 
     #map {
         height: 400px;
-        margin-top: 250px;
+        margin-top: 100px;
     }
 }
 
