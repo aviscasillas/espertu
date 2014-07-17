@@ -52,3 +52,4 @@ end
 
 gem 'mail_form'
 gem 'pg'
+gem 'actionpack-page_caching'
